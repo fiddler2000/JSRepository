@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Forms </title>
+</head>
+<body>
+    <h1> Формы </h1>
+    <form> <!-- action="" - атрибут указывающий программу или сервер, который обрабатывает информацию введенную в форме-->
+        <div>
+            <label for="txt1"> Text </label>
+            <input type="text" id="txt1" value="Ф.И.О."> <!-- можно добавить атрибут readonly для запрета редактирования -->
+        </div>
+        <div>
+            <label for="txt2"> E-mail</label>
+            <input type="email" id="txt2" placeholder="input e-mail">
+        </div>
+        <div>
+            <label for="txt3"> Password </label>
+            <input type="password" id="txt3">
+        </div>
+        <div>
+            <label for="txt4"> Number </label>
+            <input type="number" id="txt4" min="0">
+        </div>
+        <div>
+            <label for="txt5"> Range </label>
+            <input type="range" id="txt5" min="0" max="15">
+        </div>
+        <div>
+            <label for="txt6"> Date </label>
+            <input type="date" id="txt6">
+        </div>
+        <div>
+            <label for="txt7"> Color </label>
+            <input type="color" id="txt7">
+        </div>
+        <div>
+            <label for="txt8"> Message </label>
+            <br>
+            <textarea id="txt8" cols="25" rows="5"> </textarea>
+        </div>
+        <div>
+            <label for="txt9"> Your sx </label>
+            <select>
+                <option value="male" selected> Male </option> <!-- атрибут selected определят выбор по умолчанию-->
+                <option value="female"> Female </option>
+                <option value="other"> Other </option>
+            </select>
+        </div>
+        <div>
+            <label for=""> Jobs </label>
+            <input type="radio" name="work"> 1
+            <input type="radio" name="work"> 2
+            <input type="radio" name="work"> 3
+            <input type="radio" name="work"> 4
+            <input type="radio" name="work"> 5+
+        </div>
+        <div>
+            <label for=""> Food </label>
+            <input type="checkbox" name="food"> Хлеб
+            <input type="checkbox" name="food"> Соль
+            <input type="checkbox" name="food"> Овощи
+            <input type="checkbox" name="food"> Фрукты
+            <input type="checkbox" name="food"> Другое
+        </div>
+    </form>
+    <input type="submit" value=" Send form (input)">
+    <button type="submit"> Send form (button) </button>
+    <input type="reset" value=" Очистить ">
+    <br>
+    <h2>
+        Связаться со мной
+    </h2>
+    <br>
+    <div>
+        <label for="txt10"> Ваше имя: </label>
+        <input type="text" id="txt10" placeholder="Введите имя">
+    </div>
+    <br>
+    <div>
+        <label for="txt11"> Ваша почта: </label>
+        <input type="email" id="txt11" placeholder="Ваш почтовый ящик">
+    </div>
+    <br>
+    <div>
+        <label for="txt12"> Ваше сообщение: </label>
+        <br>
+        <br>
+        <textarea id="txt12" cols="50" rows="10" placeholder="Введите сообщение">
+        </textarea>
+    </div>
+    <br>
+    <button type="submit" > Отправить </button>
+</body>
+</html>

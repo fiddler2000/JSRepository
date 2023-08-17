@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site navigator</title>
+    <style>
+        .header {
+           border-bottom: 5px solid #2ea168;
+        }    
+        .card {
+           background-color: rgb(172, 173, 173);
+        }    
+        .color {
+           color: blueviolet;
+        }    
+    </style>
+</head>
+<body>
+<!--  header, nav, article - по функционалу тот же div, но подсказывает что это блок заголовка, навигации, секции-->
+<!--  aside - по функционалу тот же div, но используется для обозначения боковых блоков-->
+    <header id="head1" class="header">
+        <h2>Site navigator</h2>
+    </header>
+    <nav id="navi1">
+        <ul>
+            <li> <a href="#"> item 1 </a></li>
+            <li> <a href="#"> item 2 </a></li>
+            <li> <a href="#"> item 3 </a></li>
+            <li> <a href="#"> item 4 </a></li>
+        </ul>
+    </nav>
+    <hr>
+    <article id="block1" class="card header">
+        <h3>Block1</h3>
+        <p>Lorem ipsum dolor sit amet, <span class="color"> consectetur adipisicing elit </span>. Quas doloremque nobis et aut! Impedit quis accusamus natus repellat reprehenderit. Ipsam dolorum reprehenderit repudiandae sunt minus consequatur dolor! Laboriosam, adipisci vitae.</p>        
+    </article>
+    <article id="block2" class="card">
+        <h3>Block2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="color">Quas doloremque nobis et aut!</span> Impedit quis accusamus natus repellat reprehenderit. Ipsam dolorum reprehenderit repudiandae sunt minus consequatur dolor! Laboriosam, adipisci vitae.</p>        
+    </article>
+    <div>
+        <h4>My contacts</h4>
+        <ul>
+            <li>Instagram</li>
+            <li>Telegram</li>
+            <li>Youtube</li>
+        </ul>
+    </div>
+</body>
+</html>
